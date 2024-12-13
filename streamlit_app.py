@@ -41,11 +41,11 @@ def display_right_content(prediction, data):
     cols = st.columns(2)
 
     # 1st Row - Images
-    for i in range(3):
+    for i in range(1):
         with cols[i]:
             st.image(data['images'][i], caption=f"이미지: {prediction}", use_container_width=True)
     # 3rd Row - Text
-    for i in range(3):
+    for i in range(2):
         with cols[i]:
             st.write(data['texts'][i])
 
@@ -75,7 +75,7 @@ content_data = {
         'images': ["https://i.ibb.co/28d5XfN/1.jpg"],
         'texts': ["화농성 여드름의 주요 원인은 피지과다 미생물 번식 호르몬 변화가 있습니다","화농성 여드름을 가라앉히는 방법에는 세안하기,약물치료,여드름 패치,청소하기,자외선 차단하기 등이 도움이 될 수 있습니다."]},
     labels[1]: {
-        'images': ["https://i.ibb.co/FYjtVcS/50.jpg" ],
+        'images': ["https://i.ibb.co/FYjtVcS/50.jpg"],
         'texts': ["낭포성 여드름은 농포가 밖으로 터져 나오지 못하고 안에서 누적되어 결절 형태를 이루는 상태를 말합니다.이는 주로 피부유형과 더불어 호르몬 변화 스트레스,영양불균형,또는 잘못된 피부관리로 인해 발생할 수 있습니다","낭포성 여드름을 가라앉히는 방법에는 부드럽고 순한 클렌징 제품을 사용하여 적절한 피부관리가 필요하고,지속적인 보습,식습관 관리,약물치료,레이저 치료등이 도움이 될수 있습니다."]},
     labels[2]: {
         'images': ["https://i.ibb.co/jf714hN/images-1.jpg"],
