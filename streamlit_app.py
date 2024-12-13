@@ -45,7 +45,7 @@ def display_right_content(prediction, data):
         with cols[i]:
             st.image(data['images'][i], caption=f"이미지: {prediction}", use_container_width=True)
     # 3rd Row - Text
-    for i in range(2):
+    for i in range(1):
         with cols[i]:
             st.write(data['texts'][i])
 
